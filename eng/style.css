@@ -99,3 +99,8 @@ button:hover a {
 p {
     margin: 20px;
 }
+
+.gallery img{
+    height: 200px;
+    cursor: pointer;
+}
