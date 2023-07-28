@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.content {
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    text-align: center;
+    align-items: center;
+    
+}
+
+.symbol {
+    height: 400px;
+    width: 400px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+button {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+
+
+button:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+button:hover a {
+    color: #fff;
+}
+
+.navbar {
+    font-family: sans-serif;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    font-weight: 600;
+    list-style: none;
+    display: inline-flex;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #000;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 20px;
+}
+
+.gallery img{
+    height: 200px;
+    cursor: pointer;
+    border: 2px solid #000;
+}
